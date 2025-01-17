@@ -3,5 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/nova/login');
+});
+
+Route::get('/nova', function () {
+    return redirect('/nova/login');
 });
