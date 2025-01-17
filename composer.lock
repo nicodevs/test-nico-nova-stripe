@@ -2895,19 +2895,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicodevs/nova-stripe.git",
-                "reference": "76c0c73f054513ee0bfcd928f7455a9b04792e20"
+                "reference": "8124ed2b3888f603f2ab27c435ff30e14368776f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicodevs/nova-stripe/zipball/76c0c73f054513ee0bfcd928f7455a9b04792e20",
-                "reference": "76c0c73f054513ee0bfcd928f7455a9b04792e20",
+                "url": "https://api.github.com/repos/nicodevs/nova-stripe/zipball/8124ed2b3888f603f2ab27c435ff30e14368776f",
+                "reference": "8124ed2b3888f603f2ab27c435ff30e14368776f",
                 "shasum": ""
             },
             "require": {
                 "calebporzio/sushi": "^2.5",
-                "php": "^7.3|^8.0"
+                "php": "^7.3|^8.0",
+                "stripe/stripe-php": ">=5.0"
             },
             "require-dev": {
+                "laravel/nova": "^4.0",
                 "tightenco/duster": "^3.1"
             },
             "default-branch": true,
@@ -2936,7 +2938,7 @@
                 "source": "https://github.com/nicodevs/nova-stripe/tree/main",
                 "issues": "https://github.com/nicodevs/nova-stripe/issues"
             },
-            "time": "2025-01-17T19:03:06+00:00"
+            "time": "2025-01-17T19:14:28+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -4085,6 +4087,65 @@
                 }
             ],
             "time": "2024-06-03T08:00:43+00:00"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v16.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "4aa86099f888db9368f5f778f29feb14e6294dfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/4aa86099f888db9368f5f778f29feb14e6294dfb",
+                "reference": "4aa86099f888db9368f5f778f29feb14e6294dfb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v16.4.0"
+            },
+            "time": "2024-12-18T23:42:15+00:00"
         },
         {
             "name": "symfony/clock",
