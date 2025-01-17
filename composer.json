@@ -8,8 +8,9 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.31",
+        "laravel/nova": "^4.0",
         "laravel/tinker": "^2.9",
-        "laravel/nova": "^4.0"
+        "nicodevs/nova-stripe": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -73,6 +74,10 @@
         "nova": {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        "0": {
+            "type": "vcs",
+            "url": "git@github.com:nicodevs/nova-stripe.git"
         }
     }
 }
